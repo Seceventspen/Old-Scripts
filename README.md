@@ -13,3 +13,14 @@ A collection of scripts I've been collecting, put together or tweaked to how I w
 **Kali-SetUp-v4.sh -** This script does a few things! Basically, after downloading the latest Kali VM image, this script is designed to be run after the first log in. The script will update, upgrade, create du=irectories, install new tools and one of two other things. At this point it still requires some user interaction and therefore isn't a fully autonumous process. It's really easy to add additonal functionality to.
 
 **encode-deocde.sh -** A small script to take some user input, Base64 encode it and then provides a sanity check to allow you to decode the string again. Its most likely pretty useless but I thought I'd put it here all the same.
+
+
+**SE-VPS-SetUp.sh -**
+Delpoying this script will pull down some useful tools to aid in remote SE engagements. Run on a new pentesting VPS instance.
+
+Note: This script requires that you run the shell script as root. Enjoy!
+
+**Responder-VPS-SetUp.sh-**
+This script is run on a separate VPS instance, though us designed to be used in conjuction with 'SE-VPS' instance. Delpoying this script will pull down lgandxs Responder to aid in remote SE engagements. Run on a new pentesting VPS instance.
+
+Note: This script requires that you run the shell script as root. Enjoy!
