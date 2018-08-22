@@ -102,6 +102,7 @@ echo -en "${BLUE}[*]${RESET} ${BOLD}Installing GoPhish${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}Installing lgandx's Responder${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}Installing PowerShell Empire${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}Installing TrustedSec's Unicorn${RESET}\n"
+echo -en "${BLUE}[*]${RESET} ${BOLD}Installing MDSec's SharpeShooter${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}Installing metasploit-framework${RESET}\n"
 echo
 
@@ -117,6 +118,7 @@ wget https://github.com/gophish/gophish/releases/download/v0.6.0/gophish-v0.6.0-
 git clone https://github.com/lgandx/Responder.git
 git clone https://github.com/EmpireProject/Empire.git
 git clone https://github.com/trustedsec/unicorn
+git clone https://github.com/mdsecactivebreach/SharpShooter.git
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall &&  chmod 755 msfinstall &&  ./msfinstall
 echo
 echo -en "${YELLOW}[!]${RESET} ${BOLD}Please Note: That Additional Setup is Required For the Downloaded Tools!!${YELLOW}[!]${RESET}\n"
