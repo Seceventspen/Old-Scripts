@@ -24,3 +24,6 @@ Note: This script requires that you run the shell script as root. Enjoy!
 This script is run on a separate VPS instance, though us designed to be used in conjuction with 'SE-VPS' instance. Delpoying this script will pull down lgandxs Responder to aid in remote SE engagements. Run on a new pentesting VPS instance.
 
 Note: This script requires that you run the shell script as root. Enjoy!
+
+
+**NOTE: **I am not responsible for any malicious or illegal activtivies that anyone may use these scripts for. These scripts are for use in legally agreed and scoped penetration testing activities and research. Should **you** chose to use them for neferious means, you are soley responsible for any outcome of those activities. You have been warned!
