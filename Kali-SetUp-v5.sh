@@ -1,5 +1,5 @@
 #!/bin/bash
-# Kali Post Install SetUp - v0.4
+# Kali Post Install SetUp - v0.5
 # By @AlternativeSec
 #
 # This script sets up a fresh Kali Linux Vm/OS with a few secuirty hardening
@@ -57,8 +57,8 @@ RESET="\033[00m"       # Normal
 STAGE=0                                                         # Where are we up to
 TOTAL=$( grep '(${STAGE}/${TOTAL})' $0 | wc -l );(( TOTAL-- )) # How many things have we got todo
 
-#### Additonal Tools
-additional_tools="veil-evasion crackmapexec gobuster bettercap bloodhound bc tor filezilla nfs-common terminator python3-pip remmina network-manager-openvpn-gnome libssl-dev libffi-dev python-dev build-essential"
+#### Additional Tools
+add_tools="veil-evasion crackmapexec gobuster bettercap bloodhound bc tor filezilla nfs-common terminator python3-pip remmina gnome-screenshot openvpn network-manager-openvpn network-manager-openvpn-gnome libssl-dev libffi-dev python-dev build-essential"
 
 # ----------------------------------------------------------------------------------#
 
@@ -110,10 +110,10 @@ apt-get update && apt-get upgrade -y
 echo
 echo
 
-#### Installing Addtional Items:
+#### Installing Additional Items:
 (( STAGE++ ));echo -en "${YELLOW}[+]${RESET} (${STAGE}/${TOTAL})${YELLOW} *** Installing Additional Items ***${RESET}\n"
 echo
-apt-get install $additional_tools -y
+apt-get install $add_tools -y
 echo
 echo
 
@@ -391,7 +391,7 @@ echo -en "${BLUE}[*]${RESET} ${BOLD}pip3 install -r requirements.txt${RESET}\n\n
 
 echo -en "${BLUE}[*]${RESET} ${BOLD}Impacket Set-up\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}cd Tools/Git/impacket${RESET}\n"
-echo -en "${BLUE}[*]${RESET} ${BOLD}pip install -r requirements_examples.txt${RESET}\n"
+echo -en "${BLUE}[*]${RESET} ${BOLD}pip install -r requirements.txt${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}python setup.py install${RESET}\n\n"
 
 echo -en "${BLUE}[*]${RESET} ${BOLD}Sublist3r Set-up\n"
@@ -403,7 +403,7 @@ echo -en "${BLUE}[*]${RESET} ${BOLD}cd Tools/Git/WAScan${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}pip install -r requirements.txt${RESET}\n\n"
 
 echo -en "${BLUE}[*]${RESET} ${BOLD}One-Lin3r Set-up\n"
-echo -en "${BLUE}[*]${RESET} ${BOLD}cd /Tools/Git/One-Lin3r${RESET}\n"
+echo -en "${BLUE}[*]${RESET} ${BOLD}cd Tools/Git/One-Lin3r${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}chmod 777 -R One_Lin3r${RESET}\n"
 echo -en "${BLUE}[*]${RESET} ${BOLD}python setup.py install${RESET}\n"
 sleep 2s
